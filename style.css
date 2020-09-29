@@ -1,0 +1,50 @@
+nav{
+    font-size: 25px;
+    float: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 70px;
+    color: black;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right:20px;
+    color: black;
+    position: relative;
+    padding-bottom: 30px;
+}
+nav a{
+    color: red;
+    text-decoration:none;
+    font-size: 25px;
+    margin: 5px;
+    padding-top: 100px;
+}
+nav a:hover{
+    color: darkgreen;
+}
+h1{
+    font-family: 'Spectral', serif;
+    font-size: 60px;
+    color: black;
+}
+p{
+    font-size: 30px;
+}
+
+#sea{
+    font-size: 20px;
+}
+#coup{
+    float: right;
+    color: green;
+    font-size: 20px;
+}
+#main{
+        background-repeat: initial;
+        background-size: 100%;
+    
+}
