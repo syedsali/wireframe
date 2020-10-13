@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="flexbox.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+
+    <title>Flexbox</title>
     <style>
         .flexbox-container {
             display: flex;
@@ -16,9 +20,9 @@
             display: flex;
             justify-content: space-around;
             align-content: space-between;
-            border: royalblue double;
             width: 400;
             height: 400;
+            color: black
 
 
 
@@ -49,36 +53,84 @@
             margin: 30px;
             justify-content: space-around;
         }
+
+
+        h1{
+            font-family: 'Dancing Script', cursive;
+            font-size: 70px;
+            transform: rotate(-5deg);
+            margin-top: -30px;
+            color: royalblue;
+        }
+        
+        body{
+            text-decoration: none;
+            background-repeat: no-repeat;
+    
+        }
+
+        h2{
+            margin-top: -30px;
+            font-family: 'Berkshire Swash', cursive;
+
+        }
+
+        #imgone{
+            margin-left: 80px;
+            transform: rotate(-3deg);
+        }
+        #imgtwo{
+            float: right;
+            transform: rotate(3deg);
+            
+        }
     </style>
 
 </head>
 
-<body>
+<body style="background-color: ivory;">
     <a href="index.html"><b>Home</a>
         
     <h1 style="text-align: center;">My Travel blog</h1>
-    <h2 style="text-align: center;">If European cities were a necklace, Prague would be a daimond among the pearls</h2>
-    <div class="flexbox-container">
-        <div class="flexbox-item one">
-            <img src="images/prague.jpg" alt="Prague" style="width: 600px; height: 600;">
-
+    <h2 style="text-align: center;">If European cities were a necklace, Prague would be a diamond among the pearls</h2>
+    <div class="row center-xs">
+        <div class="col-xs-6">
+            <div class="box">
+                <img id="imgone" src="images/prague.jpg" alt="Prague" style="width: 600px; height: 600;">
+            </div>
         </div>
+    </div>
+    
+    <div class="row end-xs">
+        <div class="col-xs-6">
+            <div class="box">
+                <p>Prague (/prɑːɡ/; Czech: Praha [ˈpraɦa] (About this soundlisten), German: Prag, Latin: Praga) is the
+                    capital and largest city in the Czech Republic, the 13th largest city in the European Union[9] and the
+                    historical capital of Bohemia. Situated on the Vltava river, Prague is home to about 1.3 million people,
+                    while its metropolitan area is estimated to have a population of 2.7 million.[4] The city has a
+                    temperate oceanic climate, with relatively warm summers and chilly winters.
+    
+                    Prague is a political, cultural and economic centre of central Europe complete with a rich history.
+                    Founded during the Romanesque and flourishing by the Gothic, Renaissance and Baroque eras, Prague was
+                    the capital of the Kingdom of Bohemia and the main residence of several Holy Roman Emperors, most
+                    notably of Charles IV (r. 1346–1378).[10] It was an important city to the Habsburg Monarchy and its
+                    Austro-Hungarian Empire. The city played major roles in the Bohemian and Protestant Reformation, the
+                    Thirty Years' War and in 20th-century history as the capital of Czechoslovakia between the World Wars
+                    and the post-war Communist era.[11]</p>
+    
+            </div>
+        </div>
+    </div>
+    
 
+    
+    
+    
+    
+    <div class="flexbox-container">
+        
         <div id="two" class="flexbox-item">
-            <p>Prague (/prɑːɡ/; Czech: Praha [ˈpraɦa] (About this soundlisten), German: Prag, Latin: Praga) is the
-                capital and largest city in the Czech Republic, the 13th largest city in the European Union[9] and the
-                historical capital of Bohemia. Situated on the Vltava river, Prague is home to about 1.3 million people,
-                while its metropolitan area is estimated to have a population of 2.7 million.[4] The city has a
-                temperate oceanic climate, with relatively warm summers and chilly winters.
-
-                Prague is a political, cultural and economic centre of central Europe complete with a rich history.
-                Founded during the Romanesque and flourishing by the Gothic, Renaissance and Baroque eras, Prague was
-                the capital of the Kingdom of Bohemia and the main residence of several Holy Roman Emperors, most
-                notably of Charles IV (r. 1346–1378).[10] It was an important city to the Habsburg Monarchy and its
-                Austro-Hungarian Empire. The city played major roles in the Bohemian and Protestant Reformation, the
-                Thirty Years' War and in 20th-century history as the capital of Czechoslovakia between the World Wars
-                and the post-war Communist era.[11]</p>
-
+            
         </div>
 
         <div id="three" class="flexbox-item">
@@ -90,6 +142,40 @@
     </div><br><br>
     <h2>“It’s like a dream to come to Spain and stay for a couple of years and get somebody to teach me Spanish
         music” </h2>
+
+        <div class="row end-xs">
+            <div class="col-xs-6">
+                <div class="box">
+                    <img id="imgtwo" src="images/spain.jpg" alt="spain" style="width: 600px; height: 600;">
+                </div>
+            </div>
+        </div>
+
+        <div class="row start-xs">
+            <div class="col-xs-6">
+                <div class="box">
+                    <p>
+                        Spain (Spanish: España, [esˈpaɲa] (About this soundlisten)), officially the Kingdom of Spain[12]
+                        (Spanish:
+                        Reino de España),[a][b] is a country in Southwestern Europe with some pockets of territory across the
+                        Strait
+                        of Gibraltar and the Atlantic Ocean.[12] Its continental European territory is situated on the Iberian
+                        Peninsula. Its territory also includes two archipelagos: the Canary Islands off the coast of North
+                        Africa,
+                        and the Balearic Islands in the Mediterranean Sea. The African enclaves of Ceuta, Melilla, and Peñón de
+                        Vélez de la Gomera,[13] makes Spain the only European country to have a physical border with an African
+                        country (Morocco).[h] Several small islands in the Alboran Sea are also part of Spanish territory. The
+                        country's mainland is bordered to the south and east by the Mediterranean Sea except for a small land
+                        boundary with Gibraltar; to the north and northeast by France, Andorra, and the Bay of Biscay; and to
+                        the
+                        west and northwest by Portugal and the Atlantic Ocean respectively.
+                    </p>
+        
+                </div>
+            </div>
+        </div>
+
+
     <div class="flexbox-container">
         <div id="three" class="flexbox-item">
             <a href="https://www.britannica.com/place/Spain">For more about spain click here</a>
@@ -97,30 +183,10 @@
         </div>
 
 
+        
 
-        <div id="two" class="flexbox-item">
-            <p>
-                Spain (Spanish: España, [esˈpaɲa] (About this soundlisten)), officially the Kingdom of Spain[12]
-                (Spanish:
-                Reino de España),[a][b] is a country in Southwestern Europe with some pockets of territory across the
-                Strait
-                of Gibraltar and the Atlantic Ocean.[12] Its continental European territory is situated on the Iberian
-                Peninsula. Its territory also includes two archipelagos: the Canary Islands off the coast of North
-                Africa,
-                and the Balearic Islands in the Mediterranean Sea. The African enclaves of Ceuta, Melilla, and Peñón de
-                Vélez de la Gomera,[13] makes Spain the only European country to have a physical border with an African
-                country (Morocco).[h] Several small islands in the Alboran Sea are also part of Spanish territory. The
-                country's mainland is bordered to the south and east by the Mediterranean Sea except for a small land
-                boundary with Gibraltar; to the north and northeast by France, Andorra, and the Bay of Biscay; and to
-                the
-                west and northwest by Portugal and the Atlantic Ocean respectively.
-            </p>
 
-        </div>
-        <div class="flexbox-item one">
-            <img src="images/spain.jpg" alt="Prague" style="width: 600px; height: 600;">
-        </div>
-    </div>
+    </div> <br><br> <br> <br> <br><br> <br>
     <div class="flexbox-item 7">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ffxGB2j9ADo" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -130,8 +196,8 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
     </div>
-</body>
-<footer>
+</body> <br>
+<footer> <hr>
     <footer style="text-align:center"><i>&copy;Copyright 2019-2020 <br> All rights reserved. Powered by</i>
         Syed S.Ali
     </footer>
