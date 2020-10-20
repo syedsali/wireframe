@@ -73,3 +73,27 @@ label{
     }
 }
 
+@media screen and (max-width:1024px){
+    label{
+        display: block;
+
+    }
+    .menu{
+        text-align: left;
+        width: 100%;
+        display: none;
+        color: sandybrown
+    }
+    .menu a {
+        display: block;
+        margin: 0px;
+        font-size: 25px;
+
+    }
+
+    #toggle:checked + .menu{
+        display: block;
+    }
+
+}
+
