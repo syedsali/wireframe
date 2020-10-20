@@ -48,3 +48,26 @@ p{
         background-size: 100%;
     
 }
+
+@media only screen and (max-width: 480px) {
+
+    body{
+        background-color: crimson;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    body{
+        background-color: darkcyan;
+    }
+
+}
+
+@media only screen and (min-width:1025px) {
+    body{
+        background-color: royalblue;
+    }
+}
+
+

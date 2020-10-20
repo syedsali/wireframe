@@ -1,0 +1,27 @@
+@media screen and (max-width: 480px) {
+
+    body{
+        background-color: crimson;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    body{
+        background-color: darkcyan;
+    }
+
+}
+
+@media screen and (min-width:1025px) {
+    body{
+        background-color: khaki;
+    }
+    .center{
+        font-size: 24px;
+
+    }
+}
+
+
+
